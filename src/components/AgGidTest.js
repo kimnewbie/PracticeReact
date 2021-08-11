@@ -1,7 +1,6 @@
 import React from 'react';
 import {AgGridReact} from 'ag-grid-react';
 
-
 function AgGidTest() {
     const columnDefs = [
         {
@@ -36,6 +35,7 @@ function AgGidTest() {
             birthYear: 1995
         }
     ]
+    
     const defaultColDef = {
         sortable: true,
         editable: true,
@@ -43,7 +43,7 @@ function AgGidTest() {
         filter: true,
         floatingFilter: true
     }
-    
+
     let gridApi;
 
     const onGridReady = (params) => {
@@ -52,16 +52,16 @@ function AgGidTest() {
     const onExportClick = () => {
         gridApi.exportDataAsCsv();
     }
-    
+
     return (
-        <div className="App">
+        <div>
             <h1 align="center">React-App</h1>
             <h3>Student Details</h3>
             <button onClick={() => onExportClick()}>Export</button>
             <div
                 className="ag-theme-alpine"
                 style={{
-                    height: '200px'
+                    height: '300px'
                 }}>
                 <AgGridReact
                     columnDefs={columnDefs}
