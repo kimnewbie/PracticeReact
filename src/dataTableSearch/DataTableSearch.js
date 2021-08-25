@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import Datatable from './Datatable';
 
-import Datatable from '../datatable';
 import './styles.css';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-export default function App() {
+export default function DataTableSearch() {
     const [data, setData] = useState([]);
     const [q, setQ] = useState('');
     const [searchColumns, setSearchColumns] = useState(['name', 'birth_year']);

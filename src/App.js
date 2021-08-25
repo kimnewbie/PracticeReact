@@ -1,12 +1,11 @@
 import React from 'react';
-import StyledComponent from './styledComponent/StyledComponent';
-
 import './App.css';
+import DataTableSearch from './dataTableSearch/DataTableSearch';
 
 function App() {
   return (
     <div>
-      <StyledComponent /> 
+      {/* <DataTableSearch /> */}
     </div>
   );
 
