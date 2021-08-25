@@ -11,15 +11,14 @@ export default function McSideMenu() {
     ]
     const [orders, setOrders] = useState([]);
     const onClickSideMenu = (selectedItem) => {
-        if (selectedItem === sideMenus[4]) {
-            setOrders([])
-        }
+        if (selectedItem === sideMenus[4]) setOrders([])
+
         if (orders.includes(selectedItem)) {
-            setOrders(orders => orders.filter(order => order !== selectedItem));
+            setOrders(orders.filter(order => order !== selectedItem));
             return;
         }
         if (orders.includes("선택하지 않음")) {
-            setOrders(orders => orders.filter(order => order !== "선택하지 않음"))
+            setOrders(orders.filter(order => order !== "선택하지 않음"))
         }
         setOrders(orders => [...orders, selectedItem])
     }
