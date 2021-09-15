@@ -1,17 +1,19 @@
 import React from 'react';
-import { Input, Select } from 'antd';
+import { Select } from 'antd';
 
 const { Option } = Select;
 
 export default function InputSorting() {
     const dataSource = [
-        { Id: 4, Name: "Not Identified" },
-        { Id: 3, Name: "Closed" },
-        { Id: 2, Name: "Communicated" },
-        { Id: 6, Name: "Identified" },
         { Id: 1, Name: "Resolved" },
-        { Id: 5, Name: "Cancelled" }
+        { Id: 2, Name: "Communicated" },
+        { Id: 3, Name: "Closed" },
+        { Id: 4, Name: "Not Identified" },
+        { Id: 5, Name: "Cancelled" },
+        { Id: 6, Name: "Identified" }
     ];
+
+    console.log(dataSource)
 
     const orderListByKey = (data, key, order) => {
         const compareValues = (key, order = "asc") => (elemA, elemB) => {
@@ -23,7 +25,22 @@ export default function InputSorting() {
     }
 
     return (
-        <div>
+        <div style={{ padding: "30px 30px", textAlign: 'center' }}>
+            <span>Select without sorting</span>
+            <Select
+                showSearch
+                style={{ width: 200, margin: "10px" }}
+                placeholder="Select by Id"
+            >
+                {
+                    dataSource.map(data => (
+                        <Option key={data.Id} value={data.Id}>
+                            {data.Name}
+                        </Option>
+                    ))
+                }
+            </Select>
+            <hr />
             <span>Select without sorting</span>
             <Select
                 showSearch
