@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import DataTableSearch from './dataTableSearch/DataTableSearch';
-import McSideMenu from './mcdonalds/McSideMenu';
+import 'antd/dist/antd.css';
+import InputSorting from './components/InputSorting';
 
 function App() {
   return (
     <div>
-      {/* <DataTableSearch /> */}
-      <McSideMenu />
+      <InputSorting />
     </div>
   );
 
