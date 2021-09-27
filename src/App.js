@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import BasicCalendar from './calendar/BasicCalendar';
+import CheckboxValues from './components/CheckboxValues';
 
 function App() {
   return (
     <div>
-      <BasicCalendar />
+      <CheckboxValues />
     </div>
   );
 
