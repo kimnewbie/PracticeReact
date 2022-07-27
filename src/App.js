@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import CheckboxValues from './components/CheckboxValues';
+import ScrollBox from './fromBook/ScrollBox';
 
 function App() {
   return (
-    <div>
-      <CheckboxValues />
+    <div className='appContainer'>
+      <ScrollBox />
     </div>
   );
 
