@@ -4,6 +4,11 @@
 
 .SassComponent {
   display: flex;
+  // 768px 미만이 되면 배경색을 어둡게 바꿔준다.
+  background: $oc-gray-2;
+  @include media("<768px") {
+    background: $oc-gray-9;
+  }
   .box {
     // 일반 CSS에서는 .SassComponent .box와 마찬가지
     background: red;
