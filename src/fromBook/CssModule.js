@@ -1,4 +1,4 @@
-import styles from './CSSModule.module.css'// rsc
+import styles from './CSSModule.module.scss'// rsc
 import classNames from 'classnames/bind'; // yarn add classnames
 
 const MyComponent = ({ hightlighted, theme }) => {
