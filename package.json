@@ -22,6 +22,8 @@
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.5",
     "react-scripts": "4.0.3",
+    "sacc": "^0.0.1",
+    "sass": "^1.54.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },

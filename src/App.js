@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import AverageUseMemo from './fromBook/AverageUseMemo';
+import SassComponent from './fromBook/SassComponent';
 
 function App() {
   return (
     <div className='appContainer'>
-      <AverageUseMemo />
+      <SassComponent />
     </div>
   );
 
