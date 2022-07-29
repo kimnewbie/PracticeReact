@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import CssModule from './fromBook/CssModule';
+import StyledComponent from './fromBook/StyledComponent';
 
 function App() {
   return (
     <div className='appContainer'>
-      <CssModule />
+      <StyledComponent />
     </div>
   );
 
