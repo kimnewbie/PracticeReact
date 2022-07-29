@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import SassComponent from './fromBook/SassComponent';
+import CssModule from './fromBook/CssModule';
 
 function App() {
   return (
     <div className='appContainer'>
-      <SassComponent />
+      <CssModule />
     </div>
   );
 
