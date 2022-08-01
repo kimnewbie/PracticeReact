@@ -71,6 +71,7 @@
     "react-draggable": "^4.4.5",
     "react-icons": "^4.4.0",
     "react-refresh": "^0.8.3",
+    "react-virtualized": "^9.22.3",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
     "sacc": "^0.0.1",
