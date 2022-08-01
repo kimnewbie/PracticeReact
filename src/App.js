@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import StyledComponent from './fromBook/StyledComponent';
+import TodoApp from './bookHowToDealWReact/todoAppProject/TodoApp';
 
 function App() {
   return (
     <div className='appContainer'>
-      <StyledComponent />
+      <TodoApp />
     </div>
   );
 

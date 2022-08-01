@@ -514,7 +514,7 @@ module.exports = function (webpackEnv) {
                 loader: require.resolve("sass-loader"),
                 options: {
                   sassOptions: {
-                    includePaths: [paths.appSrc + "/fromBook/styles"],
+                    includePaths: [paths.appSrc + "/bookHowToDealWReact/styles"],
                   },
                   additionalData: "@import 'utils';",
                 },
